@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<!--Manton Horton Lab 3
+3.1 Create a user login page where a user logs in using their stored username/pass. 
+On successful login, set a session variable with their userID and Name from the database. 
+Redirect the user to a Profile page and display their avatar on the page along with their username.
+3.2 Make sure the protected page is not accessible without login-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Lab 3</title>
+<link type="text/css" rel="stylesheet" href="css/styles.css">
+</head>
+	<body>
+		<h1>Please login user</h1>
+		<form action ="check.php" method="POST" enctype="multipart/form-data">
+		<br><br>
+		<input type="text" name="username" placeholder="Enter Username"/>
+		<br><br>
+		<input type="password" name="password" placeholder="Enter Password" />
+		<br><br>
+		<input type="submit" />
+		<br><br>
+		</form>
+	</body>
+</html>

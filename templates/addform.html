@@ -1,0 +1,16 @@
+<html>
+<body>
+
+{% if session["loggedin"] == 1 %}
+<a href="/logout">LOGOUT</a><br/>
+
+{% else %}
+<a href="/loginform">LOGIN</a><br/>
+{% endif %}
+
+	<form action="/addaction" method="post">
+		<input type="text" name="name"/>
+		<input type="text" name="color"/>
+		<input type="submit"/>
+</body>
+</html>

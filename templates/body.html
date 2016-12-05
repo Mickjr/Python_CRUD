@@ -1,0 +1,16 @@
+<html>
+<body>
+{{session["loggedin"]}}
+
+{% if session["loggedin"] == 1 %}
+<a href="/logout">LOGOUT</a><br/>
+
+{% else %}
+<a href="/loginform">LOGIN</a><br/>
+{% endif %}
+
+	{% for item in pagedata %}
+		<h2>{{item[0]}} / {{item[1]}}<a href="/update/{{item[2]}}">UPDATE</a><a href="/delete/{{item[2]}}">Delete</a></h2>
+	{% endfor %}
+</body>
+</html>
